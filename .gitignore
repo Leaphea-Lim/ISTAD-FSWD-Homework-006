@@ -1,0 +1,9 @@
+# Parcel output folders
+dist/
+.cache/
+
+# Node modules
+node_modules/
+
+# OS files (optional, but good practice)
+.DS_Store

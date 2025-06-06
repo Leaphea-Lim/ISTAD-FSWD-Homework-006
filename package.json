@@ -1,0 +1,19 @@
+{
+  "name": "homework-006",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html",
+    "reset": "rm -rf .parcel-cache dist && npm run dev"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.8",
+    "parcel": "^2.15.2",
+    "tailwindcss": "^4.1.8"
+  }
+}

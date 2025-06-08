@@ -1,7 +1,7 @@
 function renderFooter() {
   return `
         <footer
-      class="relative bg-gradient-to-br from-white to-indigo-200 text-white overflow-hidden"
+      class="relative bg-green-100 text-white overflow-hidden"
         >
       <!-- Animated background elements -->
       <div
@@ -26,12 +26,12 @@ function renderFooter() {
           <div class="group">
             <div class="flex items-center space-x-2 mb-6">
               <div
-                class="w-10 h-10 bg-gradient-to-r from-indigo-500 to-indigo-800 rounded-lg flex items-center justify-center transform group-hover:rotate-12 transition duration-500"
+                class="w-10 h-10 bg-gradient-to-r from-indigo-500 to-green-500 rounded-lg flex items-center justify-center transform group-hover:rotate-12 transition duration-500"
               >
                 <span class="text-xl font-bold">DD</span>
               </div>
               <h2
-                class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-indigo-800"
+                class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-indigo-500"
               >
                 DailyDealz
               </h2>
@@ -116,7 +116,7 @@ function renderFooter() {
                   <span
                     class="w-1 h-1 bg-blue-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition duration-300"
                   ></span>
-                  Services</a
+                  Categories</a
                 >
               </li>
             </ul>
@@ -203,7 +203,7 @@ function renderFooter() {
                 />
                 <button
                   type="submit"
-                  class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-500 hover:bg-gray-600 text-white rounded-lg px-4 py-1 transition"
+                  class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-indigo-500 hover:bg-indigo-600 text-white rounded-lg px-4 py-1 transition"
                 >
                   <svg
                     class="w-5 h-5"

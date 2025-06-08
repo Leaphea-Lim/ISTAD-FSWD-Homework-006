@@ -4,7 +4,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/index.html",
-    "reset": "rm -rf .parcel-cache dist && npm run dev"
+    "r": "rm -rf .parcel-cache dist && npm run dev"
 
   },
   "keywords": [],

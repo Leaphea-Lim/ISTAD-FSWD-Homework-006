@@ -3,7 +3,7 @@ export function renderHomepage() {
   return `
     <section class="pt-24">
         <!-- Header Section -->
-        <section class="bg-blue-100 rounded-md px-6 m-6">
+        <section class="bg-blue-100  rounded-md px-6 m-6">
     <div class="mx-auto px-4 py-12">
         <!-- Main Content -->
         <div class="flex flex-col lg:flex-row items-center gap-8">
@@ -12,7 +12,7 @@ export function renderHomepage() {
                 <div class="">
                     <h2 class="text-4xl lg:text-5xl font-bold text-green-700 leading-tight">
                         Comes Grab The
-                        <span class="text-brand-green relative">
+                        <span class="text-brand-green">
                             Cart
                             <div class="absolute -bottmin-h-screenom-2 left-0 w-full h-3 bg-brand-green bg-opacity-20 rounded-full"></div>
                         </span>

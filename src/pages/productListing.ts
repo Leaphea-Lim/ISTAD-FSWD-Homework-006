@@ -1,6 +1,6 @@
-// src/pages/product-listing.ts
+
 import { fetchProducts } from "../utils/api";
-import { renderProductCard } from "../components/card";
+import  renderProductCard  from "../components/card";
 
 export async function renderProductListingPage() {
   const app = document.getElementById('app');
@@ -22,6 +22,8 @@ export async function renderProductListingPage() {
     </main>
   </div>
   `;
+
+  
 
   // Load products
   const products = await fetchProducts();

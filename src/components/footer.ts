@@ -1,7 +1,7 @@
-function renderFooter() {
+function renderFooter():string {
   return `
-        <footer
-      class="relative bg-green-100 text-white overflow-hidden"
+        <footer id="darkModeToggle "
+      class="relative bg-color text-primary overflow-hidden"
         >
       <!-- Animated background elements -->
       <div
@@ -76,9 +76,9 @@ function renderFooter() {
           </div>
 
           <!-- Quick links with hover effect -->
-          <div>
+          <div id="darkModeToggle ">
             <h3
-              class="text-lg text-black font-semibold mb-6 relative inline-block"
+              class="text-lg text-primary font-semibold mb-6 relative inline-block"
             >
               <span class="relative z-10">Quick Links</span>
               <span

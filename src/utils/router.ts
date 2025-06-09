@@ -1,5 +1,8 @@
 import { renderDetailPage } from "../pages/detail";
 import { renderListPage } from "../pages/list";
+import { renderHomepage } from "../pages/home";
+import { renderProductDetailPage } from "../pages/productDetailPage";
+import { renderAboutPage } from "../pages/about";
 
 let isRendering = false;
 
@@ -26,11 +29,11 @@ export async function router() {
 
     // Home Route
     if (hash === "#home" || hash === "" || hash === "#") {
-      // Load homepage structure
-      const { renderHomepage } = await import("../pages/home");
+      //todo: Load homepage structure
       app.innerHTML = renderHomepage();
+      return;
 
-      // Dynamically load best sellers after main content renders
+      //todo: Dynamically load best sellers after main content renders
       // const bestSellersContainer  = document.getElementById("promoting-grid");
       // if (bestSellersContainer ) {
       //   const { renderPromoting } = await import(
@@ -39,18 +42,18 @@ export async function router() {
       //   renderPromoting();
       // }
 
-      // Load promoting section if needed
-      const promotingContainer = document.getElementById("promoting-container");
-      if (promotingContainer) {
-        const { renderPromoting } = await import(
-          "../components/renderPromoting"
-        );
-        renderPromoting();
-      }
-      return;
+      //todo Load promoting section if needed
+      // const promotingContainer = document.getElementById("promoting-container");
+      // if (promotingContainer) {
+      //   const { renderPromoting } = await import(
+      //     "../components/renderPromoting"
+      //   );
+      //   renderPromoting();
+      // }
+      // return;
     }
 
-    // Products List Route
+    //todo: Products List Route
     if (hash === "#products") {
       try {
         await renderListPage();
@@ -60,20 +63,21 @@ export async function router() {
       return;
     }
 
-    // Product Detail Route
+    //todo: Product Detail Route
     if (hash.startsWith("#products/")) {
       const id = parseInt(hash.split("/")[1]);
       if (!isNaN(id)) {
-        await renderDetailPage(id);
+        // await renderDetailPage(id);
+        await renderProductDetailPage(id);
       } else {
         app.innerHTML = `<p class="text-red-500">Invalid product ID</p>`;
       }
       return;
     }
 
-    // About Route
+    //todo: About Route
     if (hash === "#about") {
-      const { renderAboutPage } = await import("../pages/about");
+      // const { renderAboutPage } = await import("../pages/about");
       app.innerHTML = renderAboutPage();
       return;
     }
